@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-dwyep9h38wf.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-nj73i8xb7sh.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-ciarangriff-boutiqueado-nzxaueu3o73.ws.codeinstitute-ide.net'
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +64,10 @@ ROOT_URLCONF = 'boutique_ado.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
