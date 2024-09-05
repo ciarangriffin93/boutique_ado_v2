@@ -17,6 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -26,10 +27,10 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-u6s0kbw0yyo.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-ebl9o31tf15.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-boutiqueado-u6s0kbw0yyo.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-boutiqueado-ebl9o31tf15.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
@@ -177,3 +178,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# Stripe
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51PveJV2N9eXtrFSscCAKmEC7lJYxLgIPkxpUu1Homr6N7Y4PHsctUEokZRDU5kvICr7MZEAXy3N4dmj5qCcoQgte00lV2SIas7')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51PveJV2N9eXtrFSswP9xfXDTZmfa8L5wXsfLsQEiZ0Xt8mP4VC98Uz64VpPkcCXoSRWAbRsCi4bFBpdM1FIZyyxC00424N5leg')
