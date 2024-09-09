@@ -18,6 +18,7 @@ load_dotenv()
 
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -192,3 +193,4 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'your-public-key')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'your-secret-key')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
