@@ -35,10 +35,10 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-gzdsq3dgtjo.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-tzse0ra42ul.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-boutiqueado-gzdsq3dgtjo.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-boutiqueado-tzse0ra42ul.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
