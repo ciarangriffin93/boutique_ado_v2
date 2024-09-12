@@ -14,6 +14,14 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
+def checkout(request):
+    total = 5399  # Amount to charge in cents
+    intent = stripe.PaymentIntent.create(
+        amount=total,
+        currency='usd',
+    )
 
 @require_POST
 def cache_checkout_data(request):
