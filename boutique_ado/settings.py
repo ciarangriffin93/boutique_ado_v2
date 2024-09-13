@@ -36,10 +36,10 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-as980veg7rx.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-pk7f74hjj8t.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-boutiqueado-as980veg7rx.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-boutiqueado-pk7f74hjj8t.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
@@ -184,6 +184,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # or wherever your static files are located
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"  # where collected files will go
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
