@@ -17,6 +17,8 @@ import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
 
+import stripe
+
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
@@ -36,10 +38,10 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-ebg4ao2jpjm.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-lxvuzd8at47.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-boutiqueado-pk7f74hjj8t.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-boutiqueado-lxvuzd8at47.ws.codeinstitute-ide.net'
 ]
 
 # Application definition
