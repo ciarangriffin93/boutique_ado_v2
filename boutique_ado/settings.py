@@ -40,7 +40,7 @@ SECRET_KEY = 'django-insecure-gmcq(7gi=o*e9^ymnii)6paamg$8tvz$(-_m6b8k+5n4ecg8f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-grle431i4vl.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriff-boutiqueado-8ohg5ijelk6.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-ciarangriff-boutiqueado-lxvuzd8at47.ws.codeinstitute-ide.net'
@@ -209,7 +209,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 if 'USE_AWS' in os.environ:
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'myawsnucketcg'
+    AWS_STORAGE_BUCKET_NAME = 'myawsbucketcg'
     AWS_S3_REGION_NAME = 'us-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
